@@ -1,4 +1,4 @@
-import { Toast, Notification, Modal } from 'mk-component'
+import { Toast, Notification, Modal, RedboxReact } from 'mk-component'
 import { fetch } from 'mk-utils'
 import './mock.js' //脱离后台测试，启用mock，否则这行注释
 
@@ -29,11 +29,12 @@ function config(options) {
 	})
 
 	_options.targetDomId = 'app' //react render到目标dom
-	_options.startAppName = 'mk-app-root' //启动app名，需要根据实际情况配置
+	_options.startAppName = 'mk-app-meta-design' //启动app名，需要根据实际情况配置
 
 	_options.toast = Toast //轻提示使用组件，mk-meta-engine使用
 	_options.notification = Notification //通知组件
-	_options.modal = Modal //模式弹窗组件
+	_options.modal = Modal //模式弹窗组件\
+	_options.errorBox = RedboxReact.RedBoxError
 	return _options
 }
 
