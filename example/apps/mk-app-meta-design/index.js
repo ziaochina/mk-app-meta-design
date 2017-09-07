@@ -12,6 +12,7 @@ export default {
 		component: CodeMirror
 	}],
 	config: config,
+	dependencies: ['js-beautify', 'react-codemirror2'],
 	load: (cb) => {
 		require.ensure([], require => {
 			cb(require('./component'), require('./action'), require('./reducer'))
