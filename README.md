@@ -1,1 +1,0 @@
-# mk-app-meta-design
