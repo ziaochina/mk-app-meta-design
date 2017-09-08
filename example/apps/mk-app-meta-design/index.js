@@ -4,7 +4,7 @@ import CodeMirror from './components/codeMirror'
 
 export default {
 	name: "mk-app-meta-design",
-	version: "1.0.0",
+	version: "1.0.1",
 	description: "mk-app-meta-design",
 	meta: data.getMeta(),
 	components: [{
